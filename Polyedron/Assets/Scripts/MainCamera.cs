@@ -3,7 +3,8 @@ using System.Collections;
 
 public class MainCamera : MonoBehaviour {
 
-    float distance = 0.09F;
+    float distance = 0.001F;
+    int mod;
 
 	// Use this for initialization
 	void Start () {
@@ -12,7 +13,12 @@ public class MainCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Time.timeSinceLevelLoad % 10 == 1 && transform.position.x <= 11)
+
+        // Definindo de quando em quando mover background
+        mod = (int) Time.timeSinceLevelLoad % (int) 10.0F;
+
+        // Adicionando para não mover mais qunado tiver no fim da tela de fundo
+        if (mod == 0 && transform.position.x <= 10)
         {
             transform.position += transform.right * distance;
         }
