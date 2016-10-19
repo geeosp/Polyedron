@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MainCamera : MonoBehaviour {
 
-    float distance = 0.1F;
+    float distance = 0.09F;
 
 	// Use this for initialization
 	void Start () {
@@ -12,6 +12,9 @@ public class MainCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position += transform.right * distance;
+        if (Time.timeSinceLevelLoad % 10 == 0 && transform.position.x <= 11)
+        {
+            transform.position += transform.right * distance;
+        }
     }
 }
