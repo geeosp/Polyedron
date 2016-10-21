@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MainCamera : MonoBehaviour {
 
-    float distance = 0.001F;
+    float distance = 0.01F;
     int mod;
 
 	// Use this for initialization
