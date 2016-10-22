@@ -180,7 +180,9 @@ MonoBehaviour:
   EnableWind: 1
   RainHeightMultiplier: 0.15
   RainWidthMultiplier: 1.5
-  CollisionMask: {}
+  CollisionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
   CollisionLifeTimeRain: 0.02
   RainMistCollisionMultiplier: 0.75
 --- !u!182 &18238810
