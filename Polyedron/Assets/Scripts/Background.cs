@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Background : MonoBehaviour {
 
-    float distance = 0.1F;
+    float distance = 0.001F;
     int mod;
 
     // Use this for initialization
@@ -20,7 +20,7 @@ public class Background : MonoBehaviour {
         mod = (int)Time.timeSinceLevelLoad % (int)10.0F;
 
         // Adicionando para não mover mais qunado tiver no fim da tela de fundo
-        if (mod == 0 && transform.position.x <= 10)
+        if (mod == 0 && transform.position.x >= -16)
         {
             transform.position -= transform.right * distance;
         }
