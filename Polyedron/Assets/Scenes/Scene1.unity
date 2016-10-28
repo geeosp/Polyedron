@@ -160,6 +160,7 @@ GameObject:
   - 23: {fileID: 168449783}
   - 50: {fileID: 168449782}
   - 58: {fileID: 168449781}
+  - 114: {fileID: 168449786}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -247,6 +248,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!114 &168449786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 168449780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c1607a3d2cec94d8c241896a587759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 0.01
+  mod: 0
 --- !u!1 &174780793 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000011530830876, guid: 39679cc4748bc75448767e7ebc1f719a,
@@ -630,6 +644,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1173151442}
   - 212: {fileID: 1173151441}
+  - 114: {fileID: 1173151443}
   m_Layer: 0
   m_Name: parallax-mountain-bg (1)
   m_TagString: Untagged
@@ -683,6 +698,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
+--- !u!114 &1173151443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1173151440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b02b305a2174fc42890ae14c478e09f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1251895080
 Prefab:
   m_ObjectHideFlags: 0
