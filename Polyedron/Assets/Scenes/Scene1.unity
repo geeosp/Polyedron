@@ -443,6 +443,7 @@ GameObject:
   - 23: {fileID: 767135157}
   - 50: {fileID: 767135156}
   - 61: {fileID: 767135155}
+  - 114: {fileID: 767135160}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -523,13 +524,24 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 767135154}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.45, y: -6.44, z: 0.24}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -11.45, y: 0.2400012, z: 6.4400005}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1629348220}
+  m_RootOrder: 5
+--- !u!114 &767135160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 767135154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d511eddaf769b5c4282324d033f91cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &955237365
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,7 +644,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
 --- !u!1 &1173151440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,3 +1038,8 @@ Prefab:
     - {fileID: 65000011408970404, guid: 39679cc4748bc75448767e7ebc1f719a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 39679cc4748bc75448767e7ebc1f719a, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1629348220 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000013807137312, guid: 39679cc4748bc75448767e7ebc1f719a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1629348219}
