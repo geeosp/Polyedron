@@ -259,8 +259,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41c1607a3d2cec94d8c241896a587759, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 0.01
-  mod: 0
 --- !u!1 &174780793 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000011530830876, guid: 39679cc4748bc75448767e7ebc1f719a,
@@ -961,6 +959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cebf7f31f32074ca06dc258286b597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  btnTexture: {fileID: 2800000, guid: 9866a92691696b346901281f2b329034, type: 3}
 --- !u!20 &1608235595 stripped
 Camera:
   m_PrefabParentObject: {fileID: 20000010020105502, guid: 39679cc4748bc75448767e7ebc1f719a,
