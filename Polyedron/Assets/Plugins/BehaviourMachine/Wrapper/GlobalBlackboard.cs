@@ -4,8 +4,6 @@
 //----------------------------------------------
 
 using UnityEngine;
-using BehaviourMachine;
-
 namespace BehaviourMachine {
     [AddComponentMenu("")]
     public class GlobalBlackboard : InternalGlobalBlackboard {
