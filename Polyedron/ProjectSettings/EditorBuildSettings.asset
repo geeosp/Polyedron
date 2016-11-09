@@ -7,7 +7,11 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: Assets/Scenes/Jogos2dTest.unity
+  - enabled: 1
+    path: Assets/Scenes/StartMenuScene.unity
   - enabled: 0
     path: Assets/Scenes/DemoScene2D.unity
   - enabled: 1
     path: Assets/Scenes/Scene1.unity
+  - enabled: 0
+    path: Assets/Scenes/TestScene.unity
