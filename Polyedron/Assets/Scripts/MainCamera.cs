@@ -23,6 +23,12 @@ public class MainCamera : MonoBehaviour {
             {
                 transform.position += new Vector3(speed * Time.deltaTime, 0.1f, 0.0f);
             }
+			if (gameObject.name == "Sphere") {
+				transform.position += new Vector3(speed * Time.deltaTime, 0.1f, 0.0f);
+			}
+			if (gameObject.name == "Triangle") {
+
+			}
         }
         
 
