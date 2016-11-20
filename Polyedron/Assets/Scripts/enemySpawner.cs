@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class enemySpawner : MonoBehaviour {
+public class EnemySpawner : MonoBehaviour {
 
 	private GameObject player;
 	public float enemySpawnTime = 10.0f;

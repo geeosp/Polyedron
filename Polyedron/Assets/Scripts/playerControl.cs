@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class playerControl : MonoBehaviour {
+public class PlayerControl : MonoBehaviour {
 
 	public float force = 1000.0f;
 	public Rigidbody2D rb;

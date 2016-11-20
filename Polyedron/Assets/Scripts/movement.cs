@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class movement : MonoBehaviour {
+public class Movement : MonoBehaviour {
 	
 	public static int playerSpeed = 5;
 	/* Use this for initialization
