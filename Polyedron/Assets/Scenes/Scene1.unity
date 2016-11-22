@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a04a705d4a2beea419d235afea9cc8cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 1000
+  force: 20
   rb: {fileID: 0}
   jump: 1
 --- !u!1 &174780793 stripped
