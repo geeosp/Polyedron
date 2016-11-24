@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class followPlayer : MonoBehaviour {
+public class FollowPlayer : MonoBehaviour {
 
 	private GameObject player;
-	public float cameraSpeed = 2.5f;
+	public float cameraSpeed = 10.0f;
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -17,7 +17,7 @@ public class followPlayer : MonoBehaviour {
 		transform.position = Vector3.Lerp(transform.position, camPos, 3 * Time.fixedDeltaTime);
 		
 		//Y Position follow
-		camPos.y = player.transform.position.y + 2;
+		camPos.y = player.transform.position.y + 7.5f;
 		transform.position = Vector3.Lerp (transform.position, camPos, 3.0f * Time.fixedDeltaTime);
 	}
 }
