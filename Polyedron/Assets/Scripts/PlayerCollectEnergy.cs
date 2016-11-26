@@ -5,14 +5,15 @@ public class PlayerCollectEnergy : MonoBehaviour
 {
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 
-	void OnTriggerEnter2D(Collider2D trigger) {
-		Debug.Log("Trigger: " + trigger.gameObject.name);
-		if (trigger.tag == "Energy") {
-			Destroy (trigger.gameObject);
+	void OnCollisionEnter2D(Collision2D col) {
+		Debug.Log("Collision: " + col.gameObject.name);
+		if (col.gameObject.tag == "Player") {
+			Destroy(gameObject);
 		}
 	}
+
 }
 
