@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class Background : MonoBehaviour {
-
-    float distance = 0.001F;
+	[Range(.0f, .1f)]
+    public float distance = 0.001F;
     int mod;
 
     // Use this for initialization
