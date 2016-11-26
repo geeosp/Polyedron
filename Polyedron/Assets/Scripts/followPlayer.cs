@@ -3,7 +3,7 @@ using System.Collections;
 
 public class FollowPlayer : MonoBehaviour {
 
-	private GameObject player;
+	public GameObject player;
 	public float cameraSpeed = 10.0f;
 	// Use this for initialization
 	void Start () {
