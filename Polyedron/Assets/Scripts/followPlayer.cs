@@ -17,7 +17,7 @@ public class FollowPlayer : MonoBehaviour {
 		transform.position = Vector3.Lerp(transform.position, camPos, 3 * Time.fixedDeltaTime);
 		
 		//Y Position follow
-		camPos.y = player.transform.position.y + 7.5f;
-		transform.position = Vector3.Lerp (transform.position, camPos, 3.0f * Time.fixedDeltaTime);
+		//camPos.y = player.transform.position.y + 7.5f;
+		//transform.position = Vector3.Lerp (transform.position, camPos, 3.0f * Time.fixedDeltaTime);
 	}
 }
