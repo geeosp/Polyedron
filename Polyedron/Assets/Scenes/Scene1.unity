@@ -408,8 +408,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 200c0742767142143b1454af245b3ea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawnTime: 10
-  enemy: {fileID: 0}
 --- !u!4 &1137888325
 Transform:
   m_ObjectHideFlags: 0
@@ -535,7 +533,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 465656, guid: b046278bb9b6e104790392b566667ba5, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 19804216, guid: b046278bb9b6e104790392b566667ba5, type: 2}
       propertyPath: CollisionModule.plane0
@@ -735,7 +733,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  cameraSpeed: 5
+  cameraSpeed: 10
+  btnTexture: {fileID: 0}
 --- !u!114 &1608235591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,7 +747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btnTexture: {fileID: 2800000, guid: 9866a92691696b346901281f2b329034, type: 3}
-  speed: 1
+  speed: 200
 --- !u!20 &1608235595 stripped
 Camera:
   m_PrefabParentObject: {fileID: 20000010020105502, guid: 39679cc4748bc75448767e7ebc1f719a,
@@ -932,7 +931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a04a705d4a2beea419d235afea9cc8cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 19
+  force: 20
   rb: {fileID: 0}
   jump: 1
 --- !u!114 &1975316815

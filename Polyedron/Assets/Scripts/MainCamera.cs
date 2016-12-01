@@ -3,11 +3,11 @@ using System.Collections;
 
 public class MainCamera : MonoBehaviour {
 
-    float distance = 0.01F;
     int mod;
     bool show;
     public Texture btnTexture;
-    public float speed = 1f;
+    public float speed = 200.0f;
+
 
     void OnGUI()
     {
@@ -19,16 +19,14 @@ public class MainCamera : MonoBehaviour {
         if (GUI.Button(new Rect(Screen.width - 100, 10, 90, 90), btnTexture))
         {
             Debug.Log("Clicked the button with an image");
-            if (gameObject.name=="Cube")
-            {
-                transform.position += new Vector3(speed * Time.deltaTime, 0.1f, 0.0f);
-            }
-			if (gameObject.name == "Sphere") {
-				transform.position += new Vector3(speed * Time.deltaTime, 0.1f, 0.0f);
-			}
-			if (gameObject.name == "Triangle") {
 
-			}
+			// Golpe (para ativar, só precisa tirar o comentário
+			//GameObject.Find("Player").transform.position += new Vector3(speed * Time.deltaTime, 0.0f, 0.0f);
+
+			// Pulo Duplo
+			GameObject.Find("Player").transform.position += new Vector3(0.0f, speed * Time.deltaTime, 0.0f);
+			GameObject.Find("Player").transform.position += new Vector3(0.0f, speed * Time.deltaTime, 0.0f);
+            
         }
         
 

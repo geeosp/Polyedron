@@ -5,6 +5,8 @@ public class FollowPlayer : MonoBehaviour {
 
 	public GameObject player;
 	public float cameraSpeed = 10.0f;
+	public static int playerSpeed = 10;
+
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -20,4 +22,5 @@ public class FollowPlayer : MonoBehaviour {
 		//camPos.y = player.transform.position.y + 7.5f;
 		//transform.position = Vector3.Lerp (transform.position, camPos, 3.0f * Time.fixedDeltaTime);
 	}
+		
 }
