@@ -687,7 +687,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   relativeVelocity: 0
-  gameSpeed: 0
 --- !u!212 &828276023
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -746,7 +745,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   relativeVelocity: -1
-  gameSpeed: 1
 --- !u!1 &831645616 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000011166087216, guid: 436f568e8f197cc43ba94d5113fa4130,
@@ -822,7 +820,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   relativeVelocity: 0
-  gameSpeed: 0
 --- !u!4 &842714573
 Transform:
   m_ObjectHideFlags: 0
@@ -911,7 +908,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   relativeVelocity: -1
-  gameSpeed: 1
 --- !u!1 &1061648498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,7 +1016,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   relativeVelocity: -1
-  gameSpeed: 1
 --- !u!1 &1495613883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,7 +1456,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   relativeVelocity: -1
-  gameSpeed: 1
 --- !u!1 &1774146922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,7 +1607,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   relativeVelocity: -1
-  gameSpeed: 1
 --- !u!1 &2126600347
 GameObject:
   m_ObjectHideFlags: 0

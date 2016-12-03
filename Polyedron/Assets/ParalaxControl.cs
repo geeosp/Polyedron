@@ -5,7 +5,7 @@ public class ParalaxControl : MonoBehaviour {
 
 
     public float relativeVelocity = -1.0f;
-    public float gameSpeed = 1.0f;
+     float gameSpeed;
 
 
 
@@ -13,7 +13,7 @@ public class ParalaxControl : MonoBehaviour {
     
     void FixedUpdate()
     {
-      
+        gameSpeed = GameControl.control.sceneSpeed;
 
         Vector3 pos = transform.position;
         pos.x = pos.x + Time.deltaTime * relativeVelocity*gameSpeed;

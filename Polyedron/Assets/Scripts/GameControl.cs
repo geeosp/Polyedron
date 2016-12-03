@@ -7,7 +7,7 @@ public class GameControl : MonoBehaviour {
     /**Essa classe é pra ser colocada em oda a cena que precise saber sobre o estado do jogador
      * qualquer coisa que precise ser acessada por qualquer cena coloca aqui
      * */
-
+     public float sceneSpeed = 1;
 
     // Use this for initialization
     void Awake()
