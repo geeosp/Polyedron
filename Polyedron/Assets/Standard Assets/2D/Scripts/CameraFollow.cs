@@ -13,7 +13,7 @@ namespace UnityStandardAssets._2D
         public Vector2 maxXAndY; // The maximum x and y coordinates the camera can have.
         public Vector2 minXAndY; // The minimum x and y coordinates the camera can have.
 
-        private Transform m_Player; // Reference to the player's transform.
+        public  Transform m_Player; // Reference to the player's transform.
 
 
         private void Awake()
