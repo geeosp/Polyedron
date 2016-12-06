@@ -26,6 +26,10 @@ public class MainCamera : MonoBehaviour {
 			// Pulo Duplo
 			GameObject.Find("Player").transform.position += new Vector3(0.0f, speed * Time.deltaTime, 0.0f);
 			GameObject.Find("Player").transform.position += new Vector3(0.0f, speed * Time.deltaTime, 0.0f);
+
+			// Atirar Projétil
+			//GameObject.Find("Projectile").transform.position = GameObject.Find("Player").transform.position;
+			//GameObject.Find("Projectile").transform.position += new Vector3(speed * Time.deltaTime, 0.0f, 0.0f);
             
         }
         
