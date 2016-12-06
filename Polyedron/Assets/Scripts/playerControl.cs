@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerControl : MonoBehaviour {
 
-	public float force = 1000.0f;
+	public float force = 100;
 	public Rigidbody2D rb;
 	public bool jump = true; 
 
@@ -16,7 +17,7 @@ public class PlayerControl : MonoBehaviour {
 	}
 
 	void Jump() {
-		GetComponent<Rigidbody2D>().AddForce(new Vector3(0, force, 0), ForceMode2D.Impulse); 
+		GetComponent<Rigidbody2D>().AddForce(new Vector3(0, force, 0), ForceMode2D.Force); 
 	}
 
 	void OnCollisionEnter2D(Collision2D other) {
