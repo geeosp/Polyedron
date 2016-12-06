@@ -176,7 +176,11 @@ Prefab:
         type: 2}
       propertyPath: player
       value: 
-      objectReference: {fileID: 831645617}
+      objectReference: {fileID: 831645623}
+    - target: {fileID: 1270601439107208, guid: be41a792bcea5664e8ec19c6e84e503d, type: 2}
+      propertyPath: m_Name
+      value: Previous
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be41a792bcea5664e8ec19c6e84e503d, type: 2}
   m_IsPrefabParent: 0
@@ -219,7 +223,13 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114880746594095426, guid: 436f568e8f197cc43ba94d5113fa4130,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114880746594095426, guid: 436f568e8f197cc43ba94d5113fa4130, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 436f568e8f197cc43ba94d5113fa4130, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &560901597
@@ -379,12 +389,20 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000011166087216, guid: 436f568e8f197cc43ba94d5113fa4130,
     type: 2}
   m_PrefabInternal: {fileID: 471931477}
---- !u!114 &831645617 stripped
+--- !u!114 &831645623
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114880746594095426, guid: 436f568e8f197cc43ba94d5113fa4130,
-    type: 2}
-  m_PrefabInternal: {fileID: 471931477}
-  m_Script: {fileID: 11500000, guid: d4d349401975ce348a064c7163aa9359, type: 3}
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 831645616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a04a705d4a2beea419d235afea9cc8cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 100
+  rb: {fileID: 0}
+  jump: 1
 --- !u!1001 &1791771955
 Prefab:
   m_ObjectHideFlags: 0

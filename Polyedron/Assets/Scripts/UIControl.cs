@@ -8,7 +8,7 @@ public class UIControl : MonoBehaviour {
      * 
      * 
      */
-    public PlayerAnimation player;
+    public PlayerControl player;
 	
 	public void NextTransform()
     {
