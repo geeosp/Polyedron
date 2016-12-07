@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4000011225843208}
   - component: {fileID: 114000012244008986}
+  - component: {fileID: 114752880794474012}
   m_Layer: 0
   m_Name: GameControl
   m_TagString: Untagged
@@ -52,3 +53,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneSpeed: 10
+--- !u!114 &114752880794474012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013148034028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf42b4f380dcf9741a0259e2f0ec2ff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highScore: 0
+  energyCollected: 0
