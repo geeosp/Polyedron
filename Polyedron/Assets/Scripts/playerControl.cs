@@ -7,7 +7,7 @@ using System.Collections;
 public class PlayerControl : MonoBehaviour {
 
 	public float force = 100;
-	public Rigidbody2D rb;
+	//public Rigidbody2D rb;
 	public bool jump = true;
     string[] forms = new string[] {
             "circle",
@@ -88,8 +88,16 @@ public class PlayerControl : MonoBehaviour {
 
     }
 
-  
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        print("coliided");
+        if (collision.gameObject.tag == "Energy")
+        {
+            Destroy(collision.gameObject);
+        }
+    }
+   
 
 
 
