@@ -6,6 +6,7 @@ public class EnergySpawner : MonoBehaviour
 
 	void OnTriggerEnter(Collider trigger) {
 		if (trigger.gameObject.tag == "Energy") {
+			DataManagement.datamanagement.increaseEnergy();
 			Destroy (trigger.gameObject);
 		}
 	}

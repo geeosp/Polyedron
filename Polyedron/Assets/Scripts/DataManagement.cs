@@ -8,6 +8,7 @@ public class DataManagement : MonoBehaviour
 {
 	public static DataManagement datamanagement;
 	public int highScore;
+	public int currentEnergy;
 	public int energyCollected;
 	
 	void Awake () {

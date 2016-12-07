@@ -34,7 +34,7 @@ public class ObjectSpawner : MonoBehaviour {
 	}
 
 	void SpawnCoins() {
-		Instantiate(coins [(Random.Range(0, coins.Length))],  new Vector3(player.transform.position.x + 30, 0, 0), transform.rotation);
+		Instantiate(coins [(Random.Range(0, coins.Length))],  new Vector3(player.transform.position.x + 30, Random.Range (0f, 3.0f), 0), transform.rotation);
 		coinSpawnTimer = Random.Range (1.0f, 5.0f);
 	}
 }

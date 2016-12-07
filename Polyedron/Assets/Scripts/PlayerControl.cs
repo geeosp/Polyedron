@@ -5,7 +5,7 @@ using System.Collections;
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Animator))]
 public class PlayerControl : MonoBehaviour {
-
+	
 	public float force = 100;
 	//public Rigidbody2D rb;
 	public bool jump = true;
@@ -89,18 +89,20 @@ public class PlayerControl : MonoBehaviour {
     }
 
 
+	//Score Functions
     private void OnTriggerEnter2D(Collider2D collision)
     {
         print("coliided");
         if (collision.gameObject.tag == "Energy")
         {
+			DataManagement.datamanagement.increaseEnergy();
             Destroy(collision.gameObject);
         }
     }
    
 
 
-
+	//Movement
     void Jump() {
 		GetComponent<Rigidbody2D>().AddForce(new Vector3(0, force, 0), ForceMode2D.Force); 
 	}

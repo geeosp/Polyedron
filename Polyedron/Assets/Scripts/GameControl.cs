@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameControl : MonoBehaviour {
 
@@ -8,6 +9,16 @@ public class GameControl : MonoBehaviour {
      * qualquer coisa que precise ser acessada por qualquer cena coloca aqui
      * */
      public float sceneSpeed = 1;
+	public GameObject scoreUI;
+	public GameObject highScoreUI;
+
+	void Update(){
+		if (DataManagement.datamanagement.currentEnergy > DataManagement.datamanagement.highScore) {
+			DataManagement.datamanagement.highScore = DataManagement.datamanagement.currentEnergy;
+		}
+		scoreUI.GetComponent<Text>().text = ("Score " + DataManagement.datamanagement.energyCollected.ToString());
+		highScoreUI.GetComponent<Text>().text = ("High Score " + DataManagement.datamanagement.highScore.ToString());
+	}
 
     // Use this for initialization
     void Awake()
